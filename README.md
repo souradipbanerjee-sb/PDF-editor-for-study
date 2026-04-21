@@ -25,9 +25,11 @@ In fast-paced academic and professional environments, users often deal with 50+ 
    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
 
 2.  Install dependencies:
+	```bash
 	pip install pymupdf pillow
 
 3. Launch
+	```bash
 	python pdf_for_study.py
 
 
@@ -35,12 +37,14 @@ In fast-paced academic and professional environments, users often deal with 50+ 
 To create a standalone portable version for Windows, follow these steps:
 
 1. Install PyInstaller:
+	```bash
 	pip install pyinstaller
 
 2. Run the build command (ensure you are in the project directory):
+	```bash
 		pyinstaller --noconsole --onefile --clean ^
 		--collect-submodules PIL ^
 		--collect-submodules fitz ^
 		pdf_for_study.py
 
-3. The standalone file will be generated in the dist/ folder as pdf_triage.exe.
+4. The standalone file will be generated in the dist/ folder as pdf_for_study.exe.
